@@ -22,6 +22,10 @@ body {
   font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
 
+.clear {
+  clear: both;
+}
+
 //map
 #map {
   height: 300px;
