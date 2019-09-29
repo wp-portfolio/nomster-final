@@ -5,3 +5,12 @@
     <p><%= place.description %></p><br />
   </div>
 <% end %>
+
+
+<!-- pagination -->
+<div class="flickr_pagination">
+    <div class="page_info">
+      <%= page_entries_info @places %>
+    </div>
+  <%= will_paginate @places, :container => false %>
+</div>
