@@ -27,25 +27,31 @@
   </a>
 </div>
 
+<br />
+<h1 class="text-center">Find Awesome Places!</h1>
 <% @places.each do |place| %>
   <div class="booyah-box col-10 offset-1">
-    <h1><%= link_to place.name, place_path(place) %></h1><br />
+    <h1><%= link_to place.name, place_path(place) %></h1>
     <i><%= place.address %></i><br /><br />
-    <p><%= place.description %></p><br />
+    <p><%= place.description %></p>
 
       <% if place.user.present? %>
         <small><%= place.user.email %></small>
       <% end %>
 
+      
 
-      <% if place.photos.present? %>>
-      <div class="booyah-box col-10 col-sm-5 last-img">
-          <%= image_tag place.photos.last.picture.url, class: 'img-fluid' %>
-      </div>
+      <% if place.photos.present? %>
+      <hr>
+        <div class="col-12 last-img-container">
+          <%= image_tag place.photos.last.picture.url, class: 'mx-auto d-block last-img'%>
+        </div>
       <% end %>
 
+      
     
       <% if place.comments.present? %>
+      <hr>
         <div class="col-12">
           <blockquote>
             <% if place.comments.last.humanized_rating.present? %>
