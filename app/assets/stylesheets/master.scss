@@ -16,6 +16,7 @@
 h1, h2, h3, h4, h5, h6 {
   margin:0;
   padding:0;
+  overflow-wrap: break-word;
 }
 body {
   background: image_url('frenchstucco.png');
@@ -23,6 +24,10 @@ body {
 }
 .clear {
   clear: both;
+  display:block; 
+  overflow:hidden; 
+  visibility:hidden; 
+  height:0px;
 }
 //index stuff
 .last-img{
