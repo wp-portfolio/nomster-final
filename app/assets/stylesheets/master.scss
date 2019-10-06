@@ -24,7 +24,13 @@ body {
 .clear {
   clear: both;
 }
-
+//index stuff
+.last-img {
+  padding: 10px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 //map
 #map {
   height: 300px;
@@ -171,3 +177,4 @@ blockquote p {
   background: image_url('frenchstucco.png');
   font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
+
